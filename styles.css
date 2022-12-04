@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body * {
+  font-family: 'Roboto';
+}
+
+body {
+  background: linear-gradient(151.79deg, #0F2B05 4.34%, #000000 87.6%);
+  height: 100vh;
+  text-align: center;
+}
+
+header {
+  padding: 75px 0;
+}
+
+.card {
+  display: inline-block;
+  width: 354px;
+  height: 508px;
+  background-image: url(./assets/bg-ignite.svg);
+
+  animation: appear .8s;
+}
+
+.card > img {
+  width: 150px;
+  height: 150px;  
+  border-radius:  50%;
+  border: 4px solid #F7DD43;
+  margin-top: 115px;
+
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+.profile {
+  margin-top: 100px;
+  color: white;
+  margin-left: 70px;
+  text-align: left;
+}
+
+.profile h1 {
+  font-size: 18px;
+  font-weigth: 700;
+}
+
+.profile p {
+  font-size: 14px;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
